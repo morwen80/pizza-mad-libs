@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>| Pizza Mad Libs |</title>
+  </head>
+  <script>
+  function madMad()
+{  document.getElementById('fullText').style.visibility = "visible";
+
+  let val01 = document.getElementById('ml01').value;
+  let val02 = document.getElementById('ml02').value;
+  let val03 = document.getElementById('ml03').value;
+  let val04 = document.getElementById('ml04').value;
+  let val05 = document.getElementById('ml05').value;
+  let val06 = document.getElementById('ml06').value;
+  let val07 = document.getElementById('ml07').value;
+  let val08 = document.getElementById('ml08').value;
+  let val09 = document.getElementById('ml09').value;
+  let val10 = document.getElementById('ml10').value;
+  let val11 = document.getElementById('ml11').value;
+  let val12 = document.getElementById('ml12').value;
+  let val13 = document.getElementById('ml13').value;
+  let val14 = document.getElementById('ml14').value;
+  let val15 = document.getElementById('ml15').value;
+
+document.getElementById("01").innerHTML = val01;
+document.getElementById("02").innerHTML = val02;
+document.getElementById("03").innerHTML = val03;
+document.getElementById("04").innerHTML = val04;
+document.getElementById("05").innerHTML = val05;
+document.getElementById("06").innerHTML = val06;
+document.getElementById("07").innerHTML = val07;
+document.getElementById("08").innerHTML = val08;
+document.getElementById("09").innerHTML = val09;
+document.getElementById("10").innerHTML = val10;
+document.getElementById("11").innerHTML = val11;
+document.getElementById("12").innerHTML = val12;
+document.getElementById("13").innerHTML = val13;
+document.getElementById("14").innerHTML = val14;
+document.getElementById("15").innerHTML = val15;
+ };
+  </script>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Scope+One|Bowlby+One');
+html, body {
+  font-family: 'Scope One', serif;
+  background-color:#fbebdc;
+}
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+#title {
+  font-family: 'Bowlby One', cursive;
+  text-align: center;
+  font-size: 4rem;
+  color: #483436;
+}
+.cat {
+  padding: 1.4rem .1rem 0 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #6e4a4a;
+}
+
+input {
+  padding: .4rem;
+}
+
+
+button {
+  padding: .6rem;
+  margin-top: 2rem;
+  border:1px solid #7c5b2b;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size:1rem;
+/*   font-family:arial, helvetica, sans-serif;  */
+  font-family: 'Scope One', serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  text-decoration:none;
+  display:inline-block;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+  color: #FEF9F5;
+ background-color: #a67939;
+  background-image:
+  -webkit-gradient(linear, left top, left bottom, from(#a67939), to(#845108));
+ background-image: -webkit-linear-gradient(top, #a67939, #845108);
+ background-image: -moz-linear-gradient(top, #a67939, #845108);
+ background-image: -ms-linear-gradient(top, #a67939, #845108);
+ background-image: -o-linear-gradient(top, #a67939, #845108);
+ background-image: linear-gradient(to bottom, #a67939, #845108);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#a67939, endColorstr=#845108);
+}
+
+button:hover{
+ border:1px solid #5a421f;
+ background-color: #805d2c;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#805d2c), to(#543305));
+ background-image: -webkit-linear-gradient(top, #805d2c, #543305);
+ background-image: -moz-linear-gradient(top, #805d2c, #543305);
+ background-image: -ms-linear-gradient(top, #805d2c, #543305);
+ background-image: -o-linear-gradient(top, #805d2c, #543305);
+ background-image: linear-gradient(to bottom, #805d2c, #543305);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#805d2c, endColorstr=#543305);
+}
+
+.madLibs {
+visibility: hidden;
+ font-size: 1.3rem;
+  line-height: 2rem;
+  padding-top: 1rem;
+}
+  </style>
+  <body>
+    <div id="title">Pizza Mad Libs</div>
+<div class="container">
+  <div class="cat">Enter 4 Adjectives</div>
+
+  <div class="words">
+    <input id="ml01"></input> <input id="ml05"></input> <input id="ml07"></input> <input id="ml08"></input>
+  </div>
+  <div class="cat">Enter 3 Singular Nouns</div>
+<div class="words">
+  <input id="ml04"></input> <input id="ml06"></input> <input id="ml10"></input>
+</div>
+
+<div class="cat">Enter 2 Types of Food</div>
+<div class="words">
+  <input id="ml13"></input> <input id="ml14"></input>
+</div>
+
+<div class="cat">Enter 2 Numbers</div>
+<div class="words">
+  <input id="ml11"></input> <input id="ml15"></input>
+</div>
+
+ <div class="cat">Enter 1 Plural Noun</div>
+<div class="words">
+  <input id="ml09"></input>
+</div>
+
+<div class="cat">Enter 1 Plural Shape Name</div>
+<div class="words">
+  <input id="ml12"></input>
+</div>
+
+<div class="cat">Enter 1 Nationality</div>
+<div class="words">
+  <input id="ml02"></input>
+</div>
+
+<div class="cat">Enter 1 First Name</div>
+<div class="words">
+  <input id="ml03"></input>
+</div>
+<!--  -->
+<button id="libs" onclick="madMad()">Create your Mad Libs!</button>
+
+  <div class="madLibs" id="fullText">
+    Pizza was invented by a <span id="01"></span> <span id="02"></span> chef named <span id="03"></span>.
+    <br>To make a pizza, you need to take a lump of <span id="04"></span>, and make a thin, round <span id="05"></span> <span id="06"></span>.
+    <br>
+    Then you cover it with <span id="07"></span> sauce, <span id="08"></span> cheese, and fresh chopped <span id="09"></span>. Next you have to bake it in a very hot <span id="10"></span>. When it is done, cut it into <span id="11"></span> <span id="12"></span>.
+    <br>
+    Some people like <span id="13"></span> pizza the best, but my favourite is the <span id="14"></span> pizza.
+    <br>
+    If I could, I would eat pizza <span id="15"></span> times a day!
+
+  </div>
+
+
+</div><!--container-->
+  </body>
+</html>
